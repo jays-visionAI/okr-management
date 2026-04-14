@@ -1,0 +1,329 @@
+.container {
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.createButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.createButton svg {
+  width: 18px;
+  height: 18px;
+}
+
+.createButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem !important;
+}
+
+.statIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.statIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.statIcon[data-type="total"] {
+  background: rgba(30, 136, 229, 0.1);
+  color: var(--color-secondary);
+}
+
+.statIcon[data-type="active"] {
+  background: rgba(253, 216, 53, 0.1);
+  color: var(--color-accent);
+}
+
+.statIcon[data-type="completed"] {
+  background: rgba(67, 156, 67, 0.1);
+  color: var(--color-success);
+}
+
+.statIcon[data-type="progress"] {
+  background: rgba(229, 57, 53, 0.1);
+  color: var(--color-primary);
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Charts Section */
+.chartsSection {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .chartsSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chartCard {
+  padding: 1.25rem !important;
+}
+
+.chartTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 1rem;
+}
+
+/* Section */
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.viewAll {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.viewAll:hover {
+  text-decoration: underline;
+}
+
+/* Objectives List */
+.objectivesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .objectivesList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .objectivesList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.objectiveCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.objectiveCard:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.objectiveHeader {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.badge.team {
+  background: rgba(30, 136, 229, 0.1);
+  color: var(--color-secondary);
+}
+
+.badge.personal {
+  background: rgba(229, 57, 53, 0.1);
+  color: var(--color-primary);
+}
+
+.status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.status.active {
+  background: rgba(253, 216, 53, 0.15);
+  color: #b7950b;
+}
+
+.status.completed {
+  background: rgba(67, 156, 67, 0.1);
+  color: var(--color-success);
+}
+
+.status.draft {
+  background: var(--color-background);
+  color: var(--color-text-secondary);
+}
+
+.status.cancelled {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+.objectiveTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+}
+
+.objectiveProgress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.objectiveProgress > div {
+  flex: 1;
+}
+
+.progressText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  min-width: 36px;
+}
+
+.objectiveMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+/* Empty State */
+.emptyState {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.emptyState svg {
+  width: 48px;
+  height: 48px;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.emptyState p {
+  color: var(--color-text-secondary);
+  margin: 0 0 0.75rem;
+}
+
+.emptyState a {
+  color: var(--color-primary);
+  font-weight: 500;
+}

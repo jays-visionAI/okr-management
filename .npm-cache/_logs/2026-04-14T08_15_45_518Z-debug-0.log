@@ -1,0 +1,13 @@
+0 verbose cli /Users/sangjaeseo/.nvm/versions/node/v20.20.2/bin/node /Users/sangjaeseo/.nvm/versions/node/v20.20.2/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.20.2
+3 silly config load:file:/Users/sangjaeseo/.nvm/versions/node/v20.20.2/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/sangjaeseo/BlueforgeProjects/okr/.npmrc
+5 silly config load:file:/Users/sangjaeseo/.npmrc
+6 silly config load:file:/Users/sangjaeseo/.nvm/versions/node/v20.20.2/etc/npmrc
+7 verbose title npm exec vite dev --port 3000 --host
+8 verbose argv "exec" "--" "vite" "dev" "--port" "3000" "--host"
+9 verbose logfile logs-max:10 dir:/Users/sangjaeseo/BlueforgeProjects/okr/.npm-cache/_logs/2026-04-14T08_15_45_518Z-
+10 verbose logfile /Users/sangjaeseo/BlueforgeProjects/okr/.npm-cache/_logs/2026-04-14T08_15_45_518Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files

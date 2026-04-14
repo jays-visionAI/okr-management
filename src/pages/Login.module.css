@@ -1,0 +1,135 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.loginBox {
+  background: var(--color-surface);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.logoIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logoIcon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 0.5rem;
+  font-family: var(--font-heading);
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.demoButton {
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.demoButton:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+/* Decorative elements - Bauhaus style */
+.decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.circle1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  opacity: 0.1;
+  top: -100px;
+  right: -100px;
+}
+
+.circle2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0.08;
+  bottom: -50px;
+  left: -50px;
+}
+
+.circle3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: var(--radius-md);
+  background: var(--color-secondary);
+  opacity: 0.08;
+  top: 50%;
+  right: 10%;
+  transform: rotate(15deg);
+}

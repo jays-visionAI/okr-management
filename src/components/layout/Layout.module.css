@@ -1,0 +1,92 @@
+.layout {
+  min-height: 100vh;
+  background-color: var(--color-off-white);
+}
+
+.main {
+  padding-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+}
+
+/* Auth Layout */
+.authLayout {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.authContainer {
+  flex: 1;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-8);
+  background-color: var(--color-white);
+  z-index: 1;
+}
+
+.authLogo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.authTitle {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.authBackground {
+  flex: 1;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-blue) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.bgShape1 {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  background-color: var(--color-accent-yellow);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.bgShape2 {
+  position: absolute;
+  bottom: -20%;
+  left: -15%;
+  width: 50%;
+  height: 50%;
+  background-color: var(--color-accent-red);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.bgShape3 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 30%;
+  height: 30%;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .authBackground {
+    display: none;
+  }
+
+  .authContainer {
+    max-width: 100%;
+    padding: var(--space-6);
+  }
+}
