@@ -28,7 +28,7 @@
   "discovery_completion_score": 100,
   "active_blueprint_view": "screen",
   "version": 1,
-  "last_saved_at": "2026-04-14T05:21:07.103Z",
+  "last_saved_at": "2026-04-15T17:18:38.606Z",
   "directory": "/Users/sangjaeseo/BlueforgeProjects/okr",
   "blueprint_source": "llm",
   "blueprint_generated_at": "2026-04-14T05:15:35.103Z",
@@ -94,7 +94,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-002": {
         "id": "scr-002",
@@ -134,7 +135,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-003": {
         "id": "scr-003",
@@ -181,7 +183,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-004": {
         "id": "scr-004",
@@ -228,7 +231,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-005": {
         "id": "scr-005",
@@ -275,7 +279,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-006": {
         "id": "scr-006",
@@ -323,7 +328,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-007": {
         "id": "scr-007",
@@ -369,7 +375,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-008": {
         "id": "scr-008",
@@ -421,7 +428,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-009": {
         "id": "scr-009",
@@ -465,7 +473,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "scr-010": {
         "id": "scr-010",
@@ -501,7 +510,8 @@
         "updatedAt": "2026-04-14T05:15:35.100Z",
         "createdBy": "ai",
         "updatedBy": "ai",
-        "isDeleted": false
+        "isDeleted": false,
+        "screenType": "page"
       },
       "feat-001": {
         "id": "feat-001",
@@ -4781,12 +4791,24 @@
       "username": "jays-visionAI"
     },
     "infrastructure": {
-      "backend": null,
-      "frontend": null,
-      "database": null,
-      "combo": null
+      "backend": "ForgeDB API",
+      "frontend": "Cloudflare Pages",
+      "database": "ForgeDB Postgres",
+      "combo": "forgedb_native"
     },
-    "build_history": [],
+    "build_history": [
+      {
+        "status": "success",
+        "summary": "Build succeeded",
+        "tasksTotal": 1,
+        "tasksDone": 1,
+        "errors": 0,
+        "timestamp": "2026-04-15T17:18:38.489Z",
+        "deployed": false,
+        "id": "build_1_1776273518489",
+        "number": 1
+      }
+    ],
     "test": {
       "enabled": [
         "unit",
@@ -5022,14 +5044,14 @@
       "analytics_config": null
     },
     "visual_design": {
-      "preset": null,
+      "preset": "linear",
       "colors": {
-        "primary": "#4B7BF5",
-        "secondary": "#64748b",
-        "accent": "#f59e0b",
-        "background": "#ffffff",
-        "surface": "#f8fafc",
-        "error": "#ef4444"
+        "primary": "#5E6AD2",
+        "secondary": "#1F2023",
+        "accent": "#F2C94C",
+        "background": "#101012",
+        "surface": "#1A1A1E",
+        "error": "#EB5757"
       },
       "typography": {
         "heading": "Inter",
